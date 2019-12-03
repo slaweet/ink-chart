@@ -30,7 +30,6 @@
 	],
 	"dependencies": {
 		"ervy": "^1.0.4",
-		"lodash.omit": "^4.5.0",
 		"prop-types": "^15.7.2"
 	},
 	"devDependencies": {
