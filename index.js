@@ -4,6 +4,8 @@ const {Box} = require('ink');
 const propTypes = require('prop-types');
 const ervy = require('ervy');
 
+const {bg, fg, ...ervyChartTypes} = ervy;
+
 const Chart = ({type, data, options}) => (
 	<Box>
 		{ervy[type](data, options)}
@@ -11,9 +13,12 @@ const Chart = ({type, data, options}) => (
 );
 
 Chart.propTypes = {
-	type: propTypes.string,
+	type: propTypes.oneOf(Object.keys(ervyChartTypes)),
 	data: propTypes.arrayOf(
-		propTypes.object,
+		propTypes.shape({
+			key: propTypes.string.isRequired,
+			value: propTypes.number.isRequired
+		}),
 	).isRequired,
 	options: propTypes.object
 };
