@@ -24,7 +24,7 @@ const data = [
 ];
 
 render(
-	<Chart preserveAspectRatio data={data} type'bar'/>
+	<Chart data={data} type'bar'/>
 );
 ```
 
@@ -32,8 +32,6 @@ render(
 ## API
 
 ### `<Chart/>`
-
-Besides the props below, it accepts props allowed in [`ansi-escapes`](https://github.com/sindresorhus/ansi-escapes#options).
 
 #### data
 
@@ -45,7 +43,14 @@ List with the data to display.
 
 Type: `string`
 
-Type of the chart, e.g. 'bar', 'pie'.
+Type of the chart, e.g. 'bar', 'pie', and other types supported by [ervy](https://www.chunqiuyiyu.com/ervy/#started)
+
+#### options
+
+Type: `object`
+
+
+Any options allowed in [ervy](https://github.com/chunqiuyiyu/ervy)
 
 
 ## License
