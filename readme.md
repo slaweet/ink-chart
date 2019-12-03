@@ -1,3 +1,4 @@
+<img width="600" alt="Demo" src="screenshot.png">
 
 > Chart component for [Ink](https://github.com/vadimdemedes/ink)
 
