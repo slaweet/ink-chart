@@ -5,9 +5,9 @@
 	"license": "MIT",
 	"repository": "slaweet/ink-chart",
 	"author": {
-		"name": "Kevin Mårtensson",
-		"email": "kevinmartensson@gmail.com",
-		"url": "github.com/kevva"
+		"name": "Vít Stanislav",
+		"email": "slaweet@gmail.com",
+		"url": "github.com/slawwet"
 	},
 	"engines": {
 		"node": ">=8"
